@@ -3,7 +3,8 @@ export default function Loading (){
 
     return (
       <>
-      En cours de chargement 
+        <h1>      En cours de chargement </h1> 
+
       </>
     )
     
