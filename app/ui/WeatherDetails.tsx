@@ -1,11 +1,14 @@
+'use client';
+
 import { Droplets, Wind, Navigation, Eye } from 'lucide-react';
 import WeatherCard from './WeatherCard';
 import { getWindDirection } from '../lib/utils';
 import type { WeatherData } from '../lib/type';
 
+
 export default function WeatherDetails({ weather }: { weather: WeatherData }) {
   return (
-    <div className="grid grid-cols-2 gap-4">
+    <div className="weather-details-container">
       <WeatherCard
         icon={<Droplets className="w-8 h-8" />}
         value={`${weather.current.relative_humidity_2m}%`}

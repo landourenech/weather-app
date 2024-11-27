@@ -1,0 +1,163 @@
+
+body, html {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  background: linear-gradient(to bottom right, rgba(0, 0, 0, 0.6), rgba(0, 0, 255, 0.5));
+  color: #fff;
+}
+
+.container {
+  position: relative;
+  height: 100%;
+  width: 100%;
+  color: #fff;
+}
+
+.mainCard {
+  width: 80%;
+  max-width: 1200px;
+  top: 50%;
+  left: 50%;
+  position: absolute;
+  transform: translate(-50%, -50%);
+  background-color: rgba(0, 0, 0, 0.7); 
+  padding: 2rem;
+  border: 2px solid #fff;
+  border-radius: 1rem;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  text-align: center;
+  z-index: 1;
+}
+
+.weather-header {
+  text-align: center;
+}
+
+.weather-header h1 {
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin-bottom: 0.75rem;
+  color: #fff;
+}
+
+.weather-header p {
+  font-size: 1.25rem;
+  opacity: 0.85;
+}
+
+.sunrise-sunset-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1.5rem;
+  margin-top: 2rem;
+}
+
+.sunrise-sunset-box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  background-color: rgba(255, 255, 255, 0.1); 
+  padding: 1.5rem;
+  border-radius: 1rem;
+}
+
+.sunrise-sunset-icon {
+  width: 2.5rem;
+  height: 2.5rem;
+  color: #fff;
+}
+
+.sunrise-sunset-info {
+  text-align: center;
+}
+
+.sunrise-sunset-info .time {
+  font-size: 1.75rem;
+  font-weight: bold;
+  color: #fff;
+}
+
+.sunrise-sunset-info .label {
+  opacity: 0.75;
+  color: #fff;
+}
+
+.weather-card {
+  background-color: rgba(255, 255, 255, 0.1); 
+  padding: 1.5rem;
+  border-radius: 1rem;
+  text-align: center;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2); 
+}
+
+.weather-card-icon {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 0.75rem;
+}
+
+.weather-card-value {
+  font-size: 1.75rem;
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+}
+
+.weather-card-label {
+  font-size: 1rem;
+  opacity: 0.75;
+}
+
+.weather-details-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1rem;
+  margin-top: 2rem;
+}
+
+.weather-main-container {
+  text-align: center;
+  padding: 2rem;
+  background-color: rgba(255, 255, 255, 0.1); 
+  border-radius: 1rem;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2); 
+}
+
+.weather-main-icon {
+  width: 5rem;
+  height: 5rem;
+  margin: 0 auto 1.5rem;
+}
+
+.weather-main-temp {
+  font-size: 4.5rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+
+.weather-main-feels-like {
+  font-size: 1.5rem;
+  opacity: 0.75;
+}
+
+@media (max-width: 768px) {
+  .mainCard {
+      width: 90%;
+      padding: 1.5rem;
+  }
+
+  .weather-main-temp {
+      font-size: 3rem;
+  }
+
+  .weather-details-container {
+      grid-template-columns: 1fr;
+      gap: 1rem;
+  }
+
+  .sunrise-sunset-container {
+      grid-template-columns: 1fr;
+      gap: 1rem;
+  }
+}

@@ -1,14 +1,16 @@
+'use client';
+
 import { Cloud } from 'lucide-react';
 import type { WeatherData } from '../lib/type';
 
 export default function WeatherMain({ weather }: { weather: WeatherData }) {
   return (
-    <div className="text-center p-6 bg-white/5 rounded-2xl">
-      <Cloud className="w-16 h-16 mx-auto mb-4" />
-      <div className="text-6xl font-bold mb-2">
+    <div className="weather-main-container">
+      <Cloud className="weather-main-icon" />
+      <div className="weather-main-temp">
         {Math.round(weather.current.temperature_2m)}°C
       </div>
-      <div className="text-xl opacity-75">
+      <div className="weather-main-feels-like">
         Feels like {Math.round(weather.current.apparent_temperature)}°C
       </div>
     </div>
